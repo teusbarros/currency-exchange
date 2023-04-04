@@ -2,12 +2,14 @@
 
 namespace teusbarros\CurrencyExchange\Tests\Feature;
 
+use teusbarros\CurrencyExchange\ConvertCurrency;
 use teusbarros\CurrencyExchange\Tests\TestCase;
 
-class InitialTest extends TestCase
+class ConvertCurrencyTest extends TestCase
 {
-    public function test_my_first_test()
+    /** @test  */
+    public function test_currency_is_converted_correctly()
     {
-        $this->assertTrue(true);
+        $this->assertEquals(10.00, ConvertCurrency::convert(20, 0.5));
     }
 }
