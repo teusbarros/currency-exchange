@@ -1,0 +1,55 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Currency Exchange Rate - Documentation",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/v1/exchange": {
+            "get": {
+                "tags": [
+                    "Currency"
+                ],
+                "summary": "Get the exchange rate for the given amount.",
+                "operationId": "4fdc8759d6e6a162671dd80686b45619",
+                "parameters": [
+                    {
+                        "name": "currency",
+                        "in": "path",
+                        "description": "The currency to exchange",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "amount",
+                        "in": "path",
+                        "description": "The amount to exchange",
+                        "required": true,
+                        "schema": {
+                            "type": "float"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Currency",
+            "description": "Currency API endpoint"
+        }
+    ]
+}
