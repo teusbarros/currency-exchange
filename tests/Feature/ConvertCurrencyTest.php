@@ -2,7 +2,7 @@
 
 namespace teusbarros\CurrencyExchange\Tests\Feature;
 
-use Orchestra\Testbench\TestCase;
+use teusbarros\CurrencyExchange\Tests\TestCase;
 
 class InitialTest extends TestCase
 {
