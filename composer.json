@@ -10,5 +10,15 @@
     ],
     "require-dev": {
         "orchestra/testbench": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "teusbarros\\CurrencyExchange\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "teusbarros\\CurrencyExchange\\Tests": "tests/"
+        }
     }
 }
