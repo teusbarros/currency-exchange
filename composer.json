@@ -1,0 +1,14 @@
+{
+    "name": "teusbarros/currencyexchange",
+    "description": "A currency exchange package for the Laravel framework.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateus Barros",
+            "email": "smateusbp@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^8.2"
+    }
+}
